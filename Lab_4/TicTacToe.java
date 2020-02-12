@@ -28,11 +28,11 @@ public class TicTacToe {
          updateGame(currentPlayer, currntRow, currentCol);
          printBoard();
          if (currentState == CROSS_WON) {
-            System.out.println("'X' won! Bye!");
+            System.out.println("'X' won!");
          } else if (currentState == NOUGHT_WON) {
-            System.out.println("'O' won! Bye!");
+            System.out.println("'O' won!");
          } else if (currentState == DRAW) {
-            System.out.println("It's a Draw! Bye!");
+            System.out.println("It's a Draw!");
          }
          currentPlayer = (currentPlayer == CROSS) ? NOUGHT : CROSS;
       } while (currentState == PLAYING); // repeat if not game-over
